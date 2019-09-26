@@ -1,0 +1,144 @@
+
+/* ===================共通====================== */
+
+body {
+    font-family: Toppan Bunkyu Midashi Mincho;
+}
+
+li {
+    list-style: none;
+}
+
+
+
+/* ===================共通====================== */
+
+
+
+
+/* ====================================-top============================================== */
+
+#home {
+    background-image: url(/assets/top-1.png);
+    min-height: 100vh;
+}
+
+/* 大きな背景画像 */
+.big-bg {
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+
+}
+
+
+/* ==========================ナビ==================================== */
+
+/* ナビ全体のレイアウト */
+.page-header{
+    display: flex;
+    justify-content: space-between;
+    background: #000;
+    opacity: 0.7;
+    line-height: 18px;
+}
+
+
+/* 文字の大きさ、色等細かい設定  */
+.page-header a {
+    color: #fff;
+}
+
+/* 左ロゴパーツの配置========== */
+
+.nav-left{
+    display: flex;
+    /* border: 1px solid #ff3344; */
+    align-items: center;
+}
+
+.logo-head {
+    display: flex;
+}
+
+.logo-left {
+    font-size: 14px;
+    padding-right: 14px;
+}
+.logo-right{
+    position: relative;
+    top: -4px;
+    font-size: 29px;
+}
+
+.logo-foot {
+    margin-top: 4px;
+    font-size: 10px;
+}
+
+
+
+/* あとで修正必要かも */
+.wrapper {
+    margin: 0 auto;
+    padding: 0 4%;
+    padding-top: 1%; 
+}
+
+
+
+/* 右ロゴパーツの配置========== */
+.main-nav-right {
+    display: flex;
+    /* border: 1px solid #ff3344; */
+    align-items: center;
+}
+
+.main-nav-right li {
+    padding-left: 48px;
+}
+
+.menu{
+    text-align: center;
+}
+
+.menu-head {
+    font-size: 16px;
+}
+
+.menu-center {
+    font-size: 16px;
+    
+}
+
+.menu-foot {
+    font-size: 10px;
+    margin-top: 4px;
+}
+
+
+/* ==========================ナビ==================================== */
+
+
+
+
+.home-content {
+    /* position: relative; */
+    /* top: -500px; */
+    margin-top: 100px;
+    text-align: center;
+    color: red;
+    /* margin-top: 150px; */
+    /* border: 1px solid #000; */
+}
+
+.main-logo > img {
+    width: 500px;
+    border-style: none;
+}
+
+
+
+
+
+/* ====================================-top============================================== */
