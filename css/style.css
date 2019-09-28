@@ -9,6 +9,11 @@ li {
     list-style: none;
 }
 
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
 /* ===================共通====================== */
@@ -120,8 +125,6 @@ li {
 /* ==========================ナビ==================================== */
 
 
-
-
 .home-content {
     /* position: relative; */
     /* top: -500px; */
@@ -138,7 +141,54 @@ li {
 }
 
 
-
-
-
 /* ====================================-top============================================== */
+
+
+
+
+
+/* ====================================-main============================================== */
+
+
+.primary-col{
+    display: flex;
+    justify-content: center;
+}
+
+.main-wrapper-info{
+    margin-top: 40px;
+}
+
+.main-wrapper-info > p {
+    text-align: center;
+}
+
+.primary-col-left {
+    width: 500px;
+}
+
+
+
+.primary-col-left > h2 {
+    font-weight: bold;
+}
+
+
+/* 修正必要 */
+.primary-col-left button {
+    align-items: center;
+}
+
+.primary-col-left > p {
+    font-size: 20px;
+    /* text-align: center; */
+}
+
+.primary-col-right img{
+    width: 498px;
+    height: 276px;
+
+}
+
+
+/* ====================================-main============================================== */
