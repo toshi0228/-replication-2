@@ -33,9 +33,7 @@ li {
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
-
 }
-
 
 /* ==========================ナビ==================================== */
 
@@ -70,6 +68,7 @@ li {
     font-size: 14px;
     padding-right: 14px;
 }
+
 .logo-right{
     position: relative;
     top: -4px;
@@ -149,6 +148,11 @@ li {
 
 /* ====================================-main============================================== */
 
+/* Logge-sectionの一番大きなか囲い */
+.main-wrapper-Loge {
+    padding-top: 70px;
+    /* border: solid 1px blue; */
+}
 
 .primary-col{
     display: flex;
@@ -157,6 +161,7 @@ li {
 
 .main-wrapper-info{
     margin-top: 40px;
+    border: solid 1px blue;
 }
 
 .main-wrapper-info > p {
@@ -165,12 +170,30 @@ li {
 
 .primary-col-left {
     width: 500px;
+    border: solid 1px blue;
 }
 
 
+.section-title {
+    border: solid 1px blue;
+    margin-left: 140px;
+}
 
-.primary-col-left > h2 {
-    font-weight: bold;
+.deco {
+    display: inline-block;
+    transform: rotate(270deg);
+}
+
+.deco > p {
+    font-size: 140px;
+    color: #E2E2E2;
+    z-index: 0;
+}
+
+
+h2 {
+    text-shadow: 2px 2px 1px #999999;
+    font-weight: normal;
 }
 
 
@@ -189,6 +212,49 @@ li {
     height: 276px;
 
 }
+
+
+
+/* ==========================Lodge==================================== */
+
+
+.main-wrapper-Loge {
+    margin-top: 80px;
+    background: #F8F8F8;
+}
+
+
+.container-pic{
+    display: grid;
+    grid-template-rows: 200px;
+    grid-template-columns: repeat(5, 200px);
+}
+
+.grid img{
+    width: 200px;
+    height: 200px;
+}
+
+.primary-col-left {
+    background: #fff;
+}
+
+.primary-col-left > .about-loge{
+    font-size: 16px;
+}
+
+.primary-col-left > p {
+    color: #000000;
+}
+
+
+
+
+
+
+/* ==========================Lodge==================================== */
+
+
 
 
 /* ====================================-main============================================== */
