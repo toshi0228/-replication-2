@@ -13,7 +13,6 @@ var top_picture = document.getElementById('home');
 top_picture.style.backgroundImage = 'url(../assets/top-1.png)';
 
 
-
 let i = 1;
 { 
     const showTime = () => {
