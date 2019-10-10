@@ -1,16 +1,16 @@
 
 
 
-let pics_src = ["url(/assets/top-1.png)",
-                "url(/assets/top-2.png)",
-                "url(/assets/top-3.png)", 
-                "url(/assets/top-4.png)",
-                "url(/assets/top-5.png)",
-                "url(/assets/top-6.png)"]
+let pics_src = ["url(../assets/top-1.png)",
+                "url(../assets/top-2.png)",
+                "url(../assets/top-3.png)", 
+                "url(../assets/top-4.png)",
+                "url(../assets/top-5.png)",
+                "url(../assets/top-6.png)"]
 
 
 var top_picture = document.getElementById('home');
-top_picture.style.backgroundImage = 'url(/assets/top-1.png)';
+top_picture.style.backgroundImage = 'url(../assets/top-1.png)';
 
 
 

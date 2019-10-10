@@ -24,7 +24,7 @@ li {
 /* ====================================-top============================================== */
 
 #home {
-    background-image: url(/assets/top-1.png);
+    background-image: url(../assets/top-1.png);
     min-height: 100vh;
 }
 
