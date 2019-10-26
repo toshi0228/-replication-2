@@ -228,7 +228,10 @@ h2 {
     display: grid;
     grid-template-rows: 200px;
     grid-template-columns: repeat(5, 200px);
+    margin-top: 70px;
+    margin-left: 140px;
 }
+
 
 .grid img{
     width: 200px;
