@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Sawarabi+Gothic" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <title>模写 メインページ</title>
 </head>
@@ -15,17 +18,17 @@
 <body>
 
     <header>
-        <div id="home" class="big-bg">
+        <div id="home" class="big-bg home">
 
             <div class="page-header wrapper">
-                
+
                     <div class="nav-left">
                         <a href="#">
                             <div class="logo-head">
                                 <div class="logo-left">暮らしの体験宿</div>
                                 <div class="logo-right">いろは</div>
                             </div>
-            
+
                             <div class="logo-foot">-Yakushima Lodge & Food Atelier-</div>
                         </a>
                     </div>
@@ -99,6 +102,7 @@
 
                 <div class="primary-col">
                     <div class="primary-col-left">
+                        <div class="box"></div>
                         <h2>「stay iroha as live」</h2>
 
                         <p class="concept">
@@ -111,20 +115,21 @@
                     </div>
 
                     <div class="primary-col-right">
-                        <img src="./assets/top-info-1.png" alt="">
+                        <img class='stay-img' src="./assets/top-info-1.png" alt="">
                     </div>
                 </div>
                 
-                <p>English version About iroha.</p>
+                <p class="one-sentence">English version About iroha.</p>
 
                 <div class="primary-col">
 
                     <div class="primary-col-left center">
-                        <button>read more</button>
+                        <!-- <button class="read-more">read more</button> -->
+                        <div class="read-more-btn"><a href="#">Read more</a></div>
                     </div>
 
                     <div class="primary-col-right">
-                        <img src="./assets/top-info-2.png" alt="">
+                        <img class='stay-img' src="./assets/top-info-2.png" alt="">
                     </div>
                 </div>
 
@@ -134,17 +139,17 @@
         <section>
             <div class="main-wrapper-Loge">
                 <div class="section-title">
-                    <h2>Lodge  - 宿泊ロッジ -</h2>
+                    <h2>Lodge 　- 宿泊ロッジ -</h2>
                 </div>
 
                 
                 <div class="deco">
                     <p>Lodge</p>
                 </div>
-                <img src="./assets/線 4.png" alt="">
+                <img class="deco-line" src="./assets/線 4.png" alt="">
 
-                <div class="primary-col">
-                        <div class="primary-col-left">
+                <div class="primary-col-loge">
+                        <div class="description-card">
 
                             <p class="about-loge">
                                 豊かな暮らしの体験宿 自然の中の貸切ロッジ。<br>
@@ -155,11 +160,12 @@
                                 <br>
                                 English version About Lodge, stay plan.
                             </p>
-                            <button>read more</button>
+                            <!-- <button>read more</button> -->
+                            <div class="read-more-btn-sm"><a href="#">Read more</a></div>
                         </div>
     
-                        <div class="primary-col-right">
-                            <img src="./assets/Lodge photo.png" alt="">
+                        <div class="room-img">
+                            <img src="./assets/Lodge-room-photo.png" alt="">
                         </div>
                     </div>
                     
@@ -171,16 +177,204 @@
                         <div class="grid"><img src="./assets/grid-4.png" alt=""></div>
                         <div class="grid"><img src="./assets/grid-5.png" alt=""></div>
                     </div>
+            </div>
+
+        </section>
+
+
+        <!-- food-atelier" ------------------------------------>
+
+        <section>
+            <div class="main-wrapper-food-atelier">
+                <div>
+                    <h2 class="section-title-food">Food-Atelier & Lounge</h2>
+                </div>
+
+                
+                <div class="deco-food-logo">
+                    <p class="deco-food-logo-sentence">Food-Atelier & Lounge</p>
+                </div>
+                <img class="deco-line-food-sec" src="./assets/線 4.png" alt="">
+
+                <div class="primary-col">
+
+                        <div>
+                            <img class="food-atelier-img" src="./assets/food-photo.png" alt="">
+                        </div>
                     
+                        <div class="description-food-card">
+                            <p class="about-loge">
+                                豊かな暮らしの体験宿 自然の中の貸切ロッジ。<br>
+                                海の音､鳥の声､樹々に囲まれて自然のなかでゆったりと､<br>
+                                屋久島の暮らしを体験できる宿です｡<br>
+                                定員は5名で、ベットは3台､布団を2枚敷くことができます｡<br>                    
+                                <br>
+                                <br>
+                                English version About Lodge, stay plan.
+                            </p>
+
+                            <div class="read-more-btn-sm"><a href="#">Read more</a></div>
+                        </div>
+
+                </div>
+                    
+    
+                    <div class="container-pic-food">
+                        <div class="grid"><img src="./assets/grid-1.png" alt=""></div>
+                        <div class="grid"><img src="./assets/grid-2.png" alt=""></div>
+                        <div class="grid"><img src="./assets/grid-3.png" alt=""></div>
+                        <div class="grid"><img src="./assets/grid-4.png" alt=""></div>
+                        <div class="grid"><img src="./assets/grid-5.png" alt=""></div>
+                    </div>
             </div>
         </section>
+
+
+
+        <!-- experience-program" ------------------------------------>
+
+        <section>
+            <div class="main-wrapper-experience">
+                <div>
+                    <h2 class='section-title-experience'>Interractive Program 　- 体験プログラム -</h2>
+                </div>
+
+                
+                <div>
+                    <p class="deco-experience-ptag">Interractive</p>
+                </div>
+
+                <img class="deco-line-experience-sec" src="./assets/線 4.png" alt="">
+
+                <div class="primary-col-loge">
+                        <div class="description-experience-card">
+
+                            <p class="about-loge">
+                                豊かな暮らしの体験宿 自然の中の貸切ロッジ。<br>
+                                海の音､鳥の声､樹々に囲まれて自然のなかでゆったりと､<br>
+                                屋久島の暮らしを体験できる宿です｡<br>
+                                定員は5名で、ベットは3台､布団を2枚敷くことができます｡<br>                    
+                                <br>
+                                <br>
+                                English version About Lodge, stay plan.
+                            </p>
+
+                            <div class="read-more-btn-sm"><a href="#">Read more</a></div>
+                        </div>
+    
+                        <div>
+                            <img class='experience-img' src="./assets/experience-photo.png" alt="">
+                        </div>
+                </div>
+
+                <div class="container-pic">
+                    <div class="grid"><img src="./assets/grid-1.png" alt=""></div>
+                    <div class="grid"><img src="./assets/grid-2.png" alt=""></div>
+                    <div class="grid"><img src="./assets/grid-3.png" alt=""></div>
+                    <div class="grid"><img src="./assets/grid-4.png" alt=""></div>
+                    <div class="grid"><img src="./assets/grid-5.png" alt=""></div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section>
+            <div class="wrapper-contact-info">
+                <div class='contact-message'>
+                    <p>
+                        　　豊かな暮らしの体験宿 自然の中の貸切ロッジ。<br>
+                        海の音､鳥の声､樹々に囲まれて自然のなかでゆったりと､<br>
+                        　　　屋久島の暮らしを体験できる宿です｡<br>
+                        <br>
+                        豊かな暮らしのひと時を、お過ごしください。<br>
+                        <br>
+                        お待ちしております。<br>
+                    </p>
+                </div>
+
+                <div class="contact-form">
+
+                    <div class="contact-box">
+                        <p class='contact-title'>Contact -お問い合わせ</p>
+
+                        <p class='contact-sentence'>
+                            アクセスやお問い合わせはこちらのページから<br>
+                            お気軽にお電話ください<br>
+                            <br>
+                            <span class='small'>Contact here.<span>
+                        </p>
+
+                        <div class='contac-btn'>
+                            <a href="#">Contact</a>
+                        </div>
+                        
+                    </div>
+
+                    <div class="reservations-box">
+                        <p class='contact-title'>Booking -ご予約-</p>
+
+                        <p class='contact-sentence'>
+                            アクセスやお問い合わせはこちらのページから<br>
+                            お気軽にお電話ください<br>
+                            <br>
+                            <span class='small'>Contact here.<span>
+                        </p>
+
+                        <div class='contac-btn'>
+                            <a href="#">Booking</a>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- →wrapper-contact-info -->
+        </section>
+
 
 
     </main>
 
     <footer>
+        <div class='footer-wrapper'>
+            
+            <div >
+                <img class="footer-logo" src="./assets/logo-white.png" alt="">
+            </div>
+    
+            <div class="footer-message">
+                <p><span class='under_line'>いろは</span></p>
+                <p class='footer-message-sentence'>
+                    ここにも、<br>
+                    なにかメッセージが入ったり、<br>
+                    お問い合わせへのリンクがあったり、<br>
+                    ボタンを作ったりすることもできます。<br>
+                </p>
+            </div>
+
+            <div class="footer-contact">
+
+                <p><span class='under_line'>Contact</p>
+                <p class='footer-contact-sentence'>
+                    〒891-4407<br>
+                    鹿児島県熊毛郡屋久島町湯泊211-53<br>
+                    TEL: 080-3187-8533<br>
+                    e-mail:  iroha.yakushima108@gmail.com<br>
+                </p>
+
+                <div class="contact-logo-wrapper">
+                    <div><img class='facebook-logo' src="./assets/facebook_logo.png" alt=""></div>
+                    <div><img class='insta-logo' src="./assets/insta-logo.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+
+        <div class='footer-under-line'>
+            <div class='footer-under-sentence'>
+                Copyright<span class='copy'>&copy;</span>暮らしの体験宿 　いろは</span>
+            </div>
+        </div>
 
     </footer>
+
 </body>
 
 </html>

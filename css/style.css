@@ -1,8 +1,12 @@
+@import url(sanitize.css);
+
+
+
 
 /* ===================共通====================== */
 
 body {
-    font-family: Toppan Bunkyu Midashi Mincho;
+    font-family: Toppan Bunkyu Midashi Mincho, ヒラギノ明朝 Pro, 游ゴシック体 ボールド 12.0d2e6;
 }
 
 li {
@@ -23,10 +27,11 @@ li {
 
 /* ====================================-top============================================== */
 
-#home {
+.home {
     background-image: url(../assets/top-1.png);
-    min-height: 100vh;
+    height: 100vh;
 }
+
 
 /* 大きな背景画像 */
 .big-bg {
@@ -37,6 +42,7 @@ li {
 
 /* ==========================ナビ==================================== */
 
+
 /* ナビ全体のレイアウト */
 .page-header{
     display: flex;
@@ -45,7 +51,6 @@ li {
     opacity: 0.7;
     line-height: 18px;
 }
-
 
 /* 文字の大きさ、色等細かい設定  */
 .page-header a {
@@ -151,6 +156,9 @@ li {
 /* Logge-sectionの一番大きなか囲い */
 .main-wrapper-Loge {
     padding-top: 70px;
+    padding-bottom: 70px;
+    margin-top: 100px;
+    background: #F8F8F8;
     /* border: solid 1px blue; */
 }
 
@@ -160,22 +168,108 @@ li {
 }
 
 .main-wrapper-info{
-    margin-top: 40px;
-    border: solid 1px blue;
+    margin-top: 90px;
+    /* border: solid 1px blue; */
+}
+
+.primary-col-left > h2 {
+    position: relative;
+    left: 30px;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 30px;
+
 }
 
 .main-wrapper-info > p {
     text-align: center;
 }
 
+.concept{
+    position: relative;
+    z-index: 1;
+    margin-top: 40px;
+    color: block;
+    /* font-family: "Noto Sans JP"; */
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: lighter;
+}
+
+.one-sentence {
+    position: relative;
+    z-index: 2;
+    right: 380px;
+    font-size: 24px;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+.box {
+    position: absolute;
+    width: 760px;
+    height: 480px;
+    background-color: #F8F8F8;
+    z-index: 1;
+    left: 170px;
+    top: 110px;
+}
+
 .primary-col-left {
+    position: relative;
+    width: 580px;
+    /* border: solid 1px blue; */
+    position: relative;
+    padding-right: 30px;
+}
+
+
+.read-more-btn{
+    position: relative;
+    z-index: 2;
+    right: 95px;
+    bottom: 55px;
+    border: solid 1px #717171;
+    padding: 10px;
+    padding-right:  30px;
+    padding-left: 30px;
+    display: block;
+}
+
+a{
+    color: #717171;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.stay-img {
+    position: relative;
     width: 500px;
-    border: solid 1px blue;
+    height: 320px;
+    z-index: 2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================Lodge==================================== */
+
+
+.primary-col-loge{
+    display: flex;
+    justify-content: center;
 }
 
 
 .section-title {
-    border: solid 1px blue;
+    /* border: solid 1px blue; */
     margin-left: 140px;
 }
 
@@ -185,17 +279,56 @@ li {
 }
 
 .deco > p {
-    font-size: 140px;
+    position: relative;
+    left: 60px;
+    font-size: 90px;
     color: #E2E2E2;
-    z-index: 0;
+    z-index: 1;
+    line-height: 4%;
 }
 
 
-h2 {
-    text-shadow: 2px 2px 1px #999999;
-    font-weight: normal;
+.description-card {
+    position: relative;
+    bottom: 80px;
+    /* border: solid 1px violet; */
+    background-color: #fff;
+    height: 340px;
+    width: 500px;
+    opacity: 0.9;
+    left: 150px;
+    z-index: 2;
+    margin-right: 60px;
 }
 
+.about-loge {
+    color: block;
+    font-family: "Sawarabi Gothic";
+    padding-left: 35px;
+    padding-top: 30px;
+    font-size: 14px;
+}
+
+.read-more-btn-sm{
+    position: relative;
+    display: block;
+    width: 90px;
+    padding: 1px;
+    padding-left: 2px;
+    padding-right: 2px;
+    border: solid 1px #717171;
+    left: 360px;
+    color: block;
+    text-align: center;
+    top: 50px;
+}
+
+.read-more-btn-sm > a {
+    position: relative;
+    z-index: 4;
+    font-size: 10px;
+    color: #000;
+}
 
 /* 修正必要 */
 .primary-col-left button {
@@ -203,55 +336,50 @@ h2 {
 }
 
 .primary-col-left > p {
-    font-size: 20px;
-    /* text-align: center; */
+    font-size: 22px;
 }
 
-.primary-col-right img{
-    width: 498px;
-    height: 276px;
+.room-img > img{
+    position: relative;
+    left: 1px;
+    width: 620px;
+    height: 380px;
+    z-index: 1;
+    bottom: 160px;
 
 }
-
-
-
-/* ==========================Lodge==================================== */
-
-
-.main-wrapper-Loge {
-    margin-top: 80px;
-    background: #F8F8F8;
-}
-
 
 .container-pic{
+    position: relative;
+    bottom: 45px;
     display: grid;
     grid-template-rows: 200px;
-    grid-template-columns: repeat(5, 200px);
-    margin-top: 70px;
-    margin-left: 140px;
+    grid-template-columns: repeat(5, 207px);
+    margin-left: 200px;
 }
 
+.section-title > h2{
+    position: relative;
+    right: 50px;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 30px;
+    z-index: 2;
+}
+
+.deco-line {
+    position: absolute;
+    left: 210px;
+}
 
 .grid img{
-    width: 200px;
-    height: 200px;
+    width: 207px;
+    height: 207px;
 }
 
 .primary-col-left {
     background: #fff;
 }
 
-.primary-col-left > .about-loge{
-    font-size: 16px;
-}
-
-.primary-col-left > p {
-    color: #000000;
-}
-
-
-
 
 
 
@@ -260,4 +388,302 @@ h2 {
 
 
 
+/* ==========================food-atelier==================================== */
+
+
+.main-wrapper-food-atelier {
+    margin-top: 92px;
+}
+
+.deco-food-logo {
+    display: inline-block;
+    transform: rotate(270deg);
+}
+
+.food-atelier-img {
+    position: relative;
+    left: 134px;
+    width: 580px;
+    height: 350px;
+    z-index: 1;
+}
+
+
+.deco-food-logo-sentence {
+    position: relative;
+    right: 130px;
+    bottom: 160px;
+    font-size: 42px;
+    color: #E2E2E2;
+    z-index: 1;
+    line-height: 4%;
+    letter-spacing: 3px;
+}
+
+.deco-line-food-sec {
+    position: relative;
+    right: 324px;
+    /* left: 218px; */
+    bottom: 70px;
+}
+
+
+.section-title-food {
+    margin-left: 140px;
+    position: relative;
+    right: 50px;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 42px;
+    letter-spacing: 3px;
+    z-index: 2;
+}
+
+
+.description-food-card {
+    position: relative;
+    bottom: 92px;
+    background-color: #F8F8F8;
+    height: 310px;
+    width: 510px;
+    opacity: 0.9;
+    left: 90px;
+    z-index: 2;
+    margin-right: 60px;
+}
+
+
+.container-pic-food{
+    position: relative;
+    top: 48px;
+    display: grid;
+    grid-template-rows: 200px;
+    grid-template-columns: repeat(5, 207px);
+    margin-left: 200px;
+}
+
+
+
+/* ==========================experience-program==================================== */
+
+
+.main-wrapper-experience {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    margin-top: 160px;
+    background: #F8F8F8;
+    /* border: solid 1px blue; */
+}
+
+
+
+.section-title-experience {
+    margin-left: 140px;
+    position: relative;
+    right: 50px;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 42px;
+    letter-spacing: 3px;
+    z-index: 2;
+}
+
+
+.deco-experience-ptag {
+    display: inline-block;
+    transform: rotate(270deg);
+    position: relative;
+    top: 50px;
+    right: 80px;
+    font-size: 70px;
+    color: #E2E2E2;
+    z-index: 1;
+    line-height: 4%;
+    letter-spacing: 3px;
+}
+
+
+
+.deco-line-experience-sec {
+    position: relative;
+    left: 234px;
+    bottom: 156px;
+}
+
+
+.experience-img {
+    position: relative;
+    left: 1px;
+    width: 620px;
+    height: 380px;
+    z-index: 1;
+    bottom: 144px;
+}
+
+
+.description-experience-card {
+    position: relative;
+    bottom: 60px;
+    background-color: #fff;
+    height: 318px;
+    width: 500px;
+    opacity: 0.9;
+    left: 150px;
+    z-index: 2;
+    margin-right: 60px;
+}
+
+
+/* ==========================contact-info==================================== */
+
+.contact-message {
+    margin-top: 108px;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 42px;
+    color: #313131;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+
+.contact-form {
+    display: flex;
+    justify-content: center;
+    margin-top: 90px;
+    margin-bottom: 80px;
+}
+
+.contact-box{
+    width: 440px;
+    height: 262px;
+    background: #F4F4F4;
+    margin-right: 120px;
+}
+
+.reservations-box{
+    width: 440px;
+    height: 262px;
+    background: #F4F4F4;
+}
+
+.contact-title {
+    position: relative;
+    right: 29px;
+    font-size: 24px;
+    font-weight: lighter;
+    text-shadow: 3px 1px 2px rgba(0, 0, 0, 0.2);
+    letter-spacing: 3px;
+}
+
+.contact-sentence {
+    margin-left: 36px;
+    font-size: 14px;
+}
+
+.contac-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px #717171;
+    width: 130px;
+    height: 50px;
+    margin-left: 332px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.contac-btn > a {
+    color: #2F2F2F;
+}
+
+
+.small {
+    font-size: 12px;
+}
+
+
 /* ====================================-main============================================== */
+
+
+
+/* ====================================-footer============================================== */
+
+
+.footer-wrapper {
+    display: flex;
+    height: 230px;
+    background-color: #0D0D0D;
+}
+
+.footer-logo{
+    width: 280px;
+    height: 160px;
+    margin-left: 50px;
+    margin-top: 28px;
+}
+
+
+.footer-message {
+    color: white;
+    font-size: 14px;
+    margin-top: 12px;
+    margin-right: 197px;
+    margin-left: 40px;
+    letter-spacing: 2px;
+}
+
+.footer-contact {
+    margin-top: 12px;
+}
+
+
+.footer-message-sentence {
+    padding-left: 10px;
+}
+
+
+.footer-contact-sentence {
+    padding-left: 21px;
+}
+
+.footer-contact{
+    color: white;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.under_line {
+    font-size: 22px;
+    border-bottom: solid 1px #fff; 
+    margin-bottom: 40px;
+    padding-bottom: 6px;
+}
+
+
+.contact-logo-wrapper {
+    display: flex;
+}
+
+.facebook-logo{
+    width: 35px;
+    height: 35px;
+}
+
+.insta-logo{
+    width: 35px;
+    height: 35px;
+}
+
+
+.footer-under-line{
+    height:42px;
+    background-color: #333333;
+    color: #fff;
+    font-size: 9px;
+}
+
+.footer-under-sentence {
+    padding-top: 14px;
+    padding-left: 45px;
+    letter-spacing: 1px;
+}
+
